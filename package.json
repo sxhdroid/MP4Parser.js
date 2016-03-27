@@ -1,6 +1,6 @@
 {
   "name": "uupaa.mp4parser.js",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "MP4 File parser",
   "url": "https://github.com/uupaa/MP4Parser.js",
   "keywords": ["AVC", "MP4", "H.264", "Parser", "uupaa", "WebModule", "Unstable"],

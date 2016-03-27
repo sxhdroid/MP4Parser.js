@@ -35,7 +35,7 @@ function testMP4Parse_parseMP4File(test, pass, miss) {
     var jsonFile = "../assets/json/png.00.mp4.json";
     var task = new Task("testMP4Parse_parseMP4File", 2, function(error, buffer) {
         var json0 = JSON.stringify(buffer[0], null, 2);
-        var mp4tree = MP4Parser.parse( new Uint8Array(buffer[1]) );
+        var mp4tree = MP4Parser.parse( new Uint8Array(buffer[1]), 0, { diagnostic: true } );
         var json1 = JSON.stringify(mp4tree.root, null, 2);
 
         var diagnostic_boxes = [
@@ -122,6 +122,7 @@ function testMP4Parse_compareH264RawStream(test, pass, miss) {
             return;
         }
 
+        MP4Parser.VERBOSE = false;
         // mp4box.mdat と videoH264RawStream を比較する
         var mp4box = MP4Parser.parse( new Uint8Array( buffer[1] ) );
 
