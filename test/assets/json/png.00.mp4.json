@@ -1,8 +1,4 @@
 {
-  "BoxHead": 0,
-  "BoxSize": 1628,
-  "BoxType": "root",
-  "root": {
     "ftyp": {
       "BoxHead": 0,
       "BoxSize": 32,
@@ -1212,5 +1208,4 @@
         "832": 104
       }
     }
-  }
 }
