@@ -74,7 +74,11 @@ function testMP4Parse_parseMP4File(test, pass, miss) {
         if (diagnostic_boxes.join(",") === mp4tree.diagnostic.boxes.join(",")) {
             if (json0 === json1) {
                 ok = true;
+            } else {
+                require("fs").writeFileSync("json0.json", json0, "utf8");
+                require("fs").writeFileSync("json1.json", json1, "utf8");
             }
+
         }
         if (ok) {
             test.done(pass());
