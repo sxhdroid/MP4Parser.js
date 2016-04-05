@@ -4,7 +4,7 @@ mkdir ff/log
 mkdir js
 
 # 6つの連番のpngファイル(test00.png 〜 test05.png)から 30秒の png.all.mp4 を作成する
-# 0.2fps を指定することで1つのpngから5秒間の静止フレームを作り、それを6枚結合して30秒の動画を作る
+# 0.2fps を指定することで1つのpngから5秒間の静止フレームを作り、それを6枚結合して30秒の動画を作る. 1000(ms) / 0.2(fps) = 5000ms duration
 # サイズは 128 x 128
 # -vprofile baseline -level 3.0 でベースラインプロファイルLv3.0 にする(-coder 0 -bf 0 -level 3.0 は効かない)
 # -movflags faststart で moov の位置を調整し再生を早める

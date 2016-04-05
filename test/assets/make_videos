@@ -1,0 +1,12 @@
+# ff/png.0n.mp4 を連結し ff/png.00_01_....mp4 を作成する
+
+ffmpeg -y -i ff/png.00.mp4 -i ff/png.01.mp4                                                     -filter_complex "concat=n=2:v=1:a=0" -an ff/png.00_01.mp4
+ffmpeg -y -i ff/png.00.mp4 -i ff/png.01.mp4 -i ff/png.02.mp4                                    -filter_complex "concat=n=3:v=1:a=0" -an ff/png.00_01_02.mp4
+ffmpeg -y -i ff/png.00.mp4 -i ff/png.01.mp4 -i ff/png.02.mp4 -i ff/png.03.mp4                   -filter_complex "concat=n=4:v=1:a=0" -an ff/png.00_01_02_03.mp4
+ffmpeg -y -i ff/png.00.mp4 -i ff/png.01.mp4 -i ff/png.02.mp4 -i ff/png.03.mp4 -i ff/png.04.mp4  -filter_complex "concat=n=5:v=1:a=0" -an ff/png.00_01_02_03_04.mp4
+
+
+# ffmpeg -y -i ff/png.00.mp4 -i ff/png.01.mp4                                                    -an -vcodec libx264 -movflags faststart -vprofile baseline -level 3.0 -qscale:v 0 -pix_fmt yuv420p ff/png.00_01.mp4
+# ffmpeg -y -i ff/png.00.mp4 -i ff/png.01.mp4 -i ff/png.02.mp4                                   -an -vcodec libx264 -movflags faststart -vprofile baseline -level 3.0 -qscale:v 0 -pix_fmt yuv420p ff/png.00_01_02.mp4
+# ffmpeg -y -i ff/png.00.mp4 -i ff/png.01.mp4 -i ff/png.02.mp4 -i ff/png.03.mp4                  -an -vcodec libx264 -movflags faststart -vprofile baseline -level 3.0 -qscale:v 0 -pix_fmt yuv420p ff/png.00_01_02_03.mp4
+# ffmpeg -y -i ff/png.00.mp4 -i ff/png.01.mp4 -i ff/png.02.mp4 -i ff/png.03.mp4 -i ff/png.04.mp4 -an -vcodec libx264 -movflags faststart -vprofile baseline -level 3.0 -qscale:v 0 -pix_fmt yuv420p ff/png.00_01_02_03_04.mp4
