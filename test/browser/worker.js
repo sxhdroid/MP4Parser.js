@@ -32,6 +32,7 @@ onmessage = function(event) {
     importScripts("../../node_modules/uupaa.h264.js/node_modules/uupaa.nalunit.js/lib/NALUnitPPS.js");
     importScripts("../../node_modules/uupaa.h264.js/node_modules/uupaa.nalunit.js/lib/NALUnitSEI.js");
     importScripts("../../node_modules/uupaa.h264.js/node_modules/uupaa.nalunit.js/lib/NALUnitIDR.js");
+    importScripts("../../node_modules/uupaa.h264.js/node_modules/uupaa.nalunit.js/lib/NALUnitNON_IDR.js");
     importScripts("../../node_modules/uupaa.h264.js/node_modules/uupaa.nalunit.js/lib/NALUnit.js");
     importScripts("../../node_modules/uupaa.h264.js/lib/H264.js");
     importScripts("../../node_modules/uupaa.typedarray.js/lib/TypedArray.js");

@@ -20,6 +20,7 @@ require("../../node_modules/uupaa.h264.js/node_modules/uupaa.nalunit.js/lib/NALU
 require("../../node_modules/uupaa.h264.js/node_modules/uupaa.nalunit.js/lib/NALUnitPPS.js");
 require("../../node_modules/uupaa.h264.js/node_modules/uupaa.nalunit.js/lib/NALUnitSEI.js");
 require("../../node_modules/uupaa.h264.js/node_modules/uupaa.nalunit.js/lib/NALUnitIDR.js");
+require("../../node_modules/uupaa.h264.js/node_modules/uupaa.nalunit.js/lib/NALUnitNON_IDR.js");
 require("../../node_modules/uupaa.h264.js/node_modules/uupaa.nalunit.js/lib/NALUnit.js");
 require("../../node_modules/uupaa.h264.js/lib/H264.js");
 require("../../node_modules/uupaa.typedarray.js/lib/TypedArray.js");
