@@ -23,16 +23,16 @@ This module made of [WebModule](https://github.com/uupaa/WebModule).
 ## WebWorkers
 
 ```js
-importScripts("<module-dir>lib/WebModule.js");
-importScripts("<module-dir>lib/MP4Parser.js");
+importScripts("<module-dir>/lib/WebModule.js");
+importScripts("<module-dir>/lib/MP4Parser.js");
 
 ```
 
 ## Node.js
 
 ```js
-require("<module-dir>lib/WebModule.js");
-require("<module-dir>lib/MP4Parser.js");
+require("<module-dir>/lib/WebModule.js");
+require("<module-dir>/lib/MP4Parser.js");
 
 ```
 
